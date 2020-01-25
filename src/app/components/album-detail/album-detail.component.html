@@ -1,0 +1,7 @@
+<div class="loader" *ngIf="isLoading">Loading...</div>
+<div *ngIf="!isLoading">
+  <h3 (click)="goBack()"> Go Back</h3>
+  <div *ngFor="let photo of photos">
+    <img [src]="photo.url">
+  </div>
+</div>
